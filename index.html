@@ -130,6 +130,7 @@
                 <a href="#inicio" class="nav-link text-gray-700 hover:text-perfume-magenta font-semibold transition">Inicio</a>
                 <a href="#catalogo" class="nav-link text-gray-700 hover:text-perfume-magenta font-semibold transition">Catálogo</a>
                 <a href="#contacto" class="nav-link text-gray-700 hover:text-perfume-magenta font-semibold transition">Contacto</a>
+                <a href="#quienes-somos" class="nav-link text-gray-700 hover:text-perfume-magenta font-semibold transition">Quiénes Somos</a>
             </nav>
             
             <div class="flex items-center space-x-2 md:space-x-4">
@@ -230,6 +231,60 @@
     </section>
 
     <!-- PIE DE PÁGINA -->
+    <!-- SECCIÓN QUIÉNES SOMOS -->
+    <section id="quienes-somos" class="py-20 bg-gray-50 border-t border-gray-100 transition-colors duration-500">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold uppercase tracking-widest text-perfume-magenta mb-3 block">Nuestra Historia</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-perfume-dark mb-4">Quiénes Somos</h2>
+                <div class="w-16 h-1 bg-perfume-magenta mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- Texto -->
+                <div class="space-y-5">
+                    <p id="about-intro" class="text-gray-600 text-lg leading-relaxed">
+                        En <strong class="text-perfume-dark">Scent Paradise</strong> somos apasionados del arte de la perfumería. Nuestro objetivo es acercarte las mejores fragancias del mundo con autenticidad, calidad y precios accesibles.
+                    </p>
+                    <p id="about-mission" class="text-gray-500 leading-relaxed">
+                        Creemos que cada persona merece llevar su propia fragancia — una que cuente su historia, refleje su personalidad y deje una huella inolvidable.
+                    </p>
+                    <p id="about-values" class="text-gray-500 leading-relaxed">
+                        Trabajamos con proveedores certificados, garantizamos la originalidad de cada producto y ofrecemos una experiencia de compra cómoda, rápida y confiable.
+                    </p>
+
+                    <!-- Valores -->
+                    <div class="grid grid-cols-3 gap-4 pt-4">
+                        <div class="text-center bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
+                            <div class="text-3xl mb-2">✅</div>
+                            <p class="text-xs font-bold text-perfume-dark">100% Original</p>
+                        </div>
+                        <div class="text-center bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
+                            <div class="text-3xl mb-2">🚚</div>
+                            <p class="text-xs font-bold text-perfume-dark">Envío Rápido</p>
+                        </div>
+                        <div class="text-center bg-white rounded-2xl p-4 shadow-sm border border-gray-100">
+                            <div class="text-3xl mb-2">💬</div>
+                            <p class="text-xs font-bold text-perfume-dark">Soporte 24/7</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Imagen / decorativa -->
+                <div class="flex justify-center">
+                    <div class="relative w-72 h-72 md:w-80 md:h-80">
+                        <div class="absolute inset-0 bg-perfume-magenta rounded-full opacity-5"></div>
+                        <div class="absolute inset-6 bg-perfume-magenta rounded-full opacity-5"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <img id="about-logo-img" src="https://raw.githubusercontent.com/famlyfragrancerd-byte/famlyfragrancerd-web/54362eb6b882b258af2a8d6f066984c090a95436/logo%20png%20famly.png"
+                                alt="Scent Paradise" class="w-56 h-56 object-contain drop-shadow-xl hover:scale-105 transition duration-500">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer id="contacto" class="py-12 border-t border-gray-200 transition-colors duration-500">
         <div class="container mx-auto px-4 text-center">
             <img src="https://raw.githubusercontent.com/famlyfragrancerd-byte/famlyfragrancerd-web/54362eb6b882b258af2a8d6f066984c090a95436/logo%20png%20famly.png" alt="Logo" class="h-40 mx-auto mb-4 grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition duration-300 footer-logo">
@@ -1088,7 +1143,7 @@
             }
         }
 
-        const SUPER_ADMIN_EMAILS = [ "yahairamendezplacido@gmail.com" ]; 
+        const SUPER_ADMIN_EMAILS = [ "" ]; 
         const STAFF_EMAILS = [ "" ];
 
         window.statusDisplayNames = { 'Recibido': 'Recibido', 'Procesando': 'Procesando', 'Enviado': 'Enviado', 'Completado': 'Completado', 'Cancelado': 'Cancelado', 'Eliminado': 'Eliminado' };

@@ -6,7 +6,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="theme-color" content="#000000">
-    <link id="favicon-link" rel="apple-touch-icon" href="https://raw.githubusercontent.com/famlyfragrancerd-byte/famlyfragrancerd-web/54362eb6b882b258af2a8d6f066984c090a95436/logo%20png%20famly.png">
+    <link id="favicon-link" rel="apple-touch-icon" href="https://raw.githubusercontent.com/Thefragancehouse-byte/Thefragancehouse-web/54362eb6b882b258af2a8d6f066984c090a95436/logo%20png%20famly.png">
     
     <title>Scent Paradise | Tu Tienda de Perfumes</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -106,7 +106,7 @@
 
     <!-- PANTALLA DE CARGA -->
     <div id="splash-screen">
-        <img id="splash-logo" src="https://raw.githubusercontent.com/famlyfragrancerd-byte/famlyfragrancerd-web/54362eb6b882b258af2a8d6f066984c090a95436/logo%20png%20famly.png" alt="Scent Paradise Cargando">
+        <img id="splash-logo" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'></svg>" alt="Scent Paradise Cargando">
     </div>
 
     <!-- BOTÓN FLOTANTE DE WHATSAPP -->
@@ -123,7 +123,7 @@
     <header id="main-header" class="backdrop-blur-md fixed w-full z-40 top-0 border-b border-gray-200 py-3">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <a href="#inicio" class="flex items-center">
-                <img src="https://raw.githubusercontent.com/famlyfragrancerd-byte/famlyfragrancerd-web/54362eb6b882b258af2a8d6f066984c090a95436/logo%20png%20famly.png" alt="Scent Paradise Logo" class="h-16 md:h-24 w-auto object-contain transition-all duration-300" id="main-logo">
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'></svg>" alt="Scent Paradise Logo" class="h-16 md:h-24 w-auto object-contain transition-all duration-300" id="main-logo">
             </a>
             
             <nav class="hidden lg:flex space-x-8 items-center absolute left-1/2 transform -translate-x-1/2">
@@ -243,14 +243,8 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <!-- Texto -->
                 <div class="space-y-5">
-                    <p id="about-intro" class="text-gray-600 text-lg leading-relaxed">
-                        En <strong class="text-perfume-dark">Scent Paradise</strong> somos apasionados del arte de la perfumería. Nuestro objetivo es acercarte las mejores fragancias del mundo con autenticidad, calidad y precios accesibles.
-                    </p>
-                    <p id="about-mission" class="text-gray-500 leading-relaxed">
-                        Creemos que cada persona merece llevar su propia fragancia — una que cuente su historia, refleje su personalidad y deje una huella inolvidable.
-                    </p>
-                    <p id="about-values" class="text-gray-500 leading-relaxed">
-                        Trabajamos con proveedores certificados, garantizamos la originalidad de cada producto y ofrecemos una experiencia de compra cómoda, rápida y confiable.
+                    <p id="about-main-text" class="text-gray-600 text-lg leading-relaxed">
+                        En <strong class="text-perfume-dark">Scent Paradise</strong> somos apasionados del arte de la perfumería. Nuestro objetivo es acercarte las mejores fragancias del mundo con autenticidad, calidad y precios accesibles. Creemos que cada persona merece llevar su propia fragancia — una que cuente su historia, refleje su personalidad y deje una huella inolvidable. Trabajamos con proveedores certificados, garantizamos la originalidad de cada producto y ofrecemos una experiencia de compra cómoda, rápida y confiable.
                     </p>
 
                     <!-- Valores -->
@@ -270,15 +264,26 @@
                     </div>
                 </div>
 
-                <!-- Imagen / decorativa -->
-                <div class="flex justify-center">
-                    <div class="relative w-72 h-72 md:w-80 md:h-80">
+                <!-- CEO Section -->
+                <div class="flex flex-col items-center justify-center">
+                    <!-- CEO Photo -->
+                    <div class="relative w-72 h-72 md:w-80 md:h-80 mb-6">
                         <div class="absolute inset-0 bg-perfume-magenta rounded-full opacity-5"></div>
                         <div class="absolute inset-6 bg-perfume-magenta rounded-full opacity-5"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <img id="about-logo-img" src="https://raw.githubusercontent.com/famlyfragrancerd-byte/famlyfragrancerd-web/54362eb6b882b258af2a8d6f066984c090a95436/logo%20png%20famly.png"
-                                alt="Scent Paradise" class="w-56 h-56 object-contain drop-shadow-xl hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 flex items-center justify-center overflow-hidden rounded-full">
+                            <img id="about-ceo-img" src="https://raw.githubusercontent.com/Thefragancehouse-byte/Thefragancehouse-web/54362eb6b882b258af2a8d6f066984c090a95436/logo%20png%20famly.png"
+                                alt="CEO" class="w-full h-full object-cover drop-shadow-xl hover:scale-105 transition duration-500">
                         </div>
+                    </div>
+                    
+                    <!-- CEO Info -->
+                    <div class="text-center">
+                        <h3 id="about-ceo-name" class="text-xl md:text-2xl font-bold text-perfume-dark mb-2">
+                            CEO Name
+                        </h3>
+                        <p id="about-ceo-role" class="text-sm md:text-base text-gray-600 italic font-medium">
+                            CEO & Founder
+                        </p>
                     </div>
                 </div>
             </div>
@@ -287,7 +292,7 @@
 
     <footer id="contacto" class="py-12 border-t border-gray-200 transition-colors duration-500">
         <div class="container mx-auto px-4 text-center">
-            <img src="https://raw.githubusercontent.com/famlyfragrancerd-byte/famlyfragrancerd-web/54362eb6b882b258af2a8d6f066984c090a95436/logo%20png%20famly.png" alt="Logo" class="h-40 mx-auto mb-4 grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition duration-300 footer-logo">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'></svg>" alt="Logo" class="h-40 mx-auto mb-4 grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition duration-300 footer-logo">
             <p class="text-gray-500 mb-6 font-medium">
                 <span id="display-footer-email">info@scentparadise.com</span> | 
                 <span id="display-footer-phone">+1 (000) 000-0000</span> | 
@@ -647,6 +652,11 @@
                                 <label class="block text-xs text-gray-500 font-bold mb-1">Logo de la Tienda (URL)</label>
                                 <input type="url" id="cfg-logo-url" class="w-full border border-gray-300 px-3 py-2 rounded-lg text-sm" placeholder="URL de la imagen del logo (PNG/JPG)">
                             </div>
+                            <div class="md:col-span-2">
+                                <label class="block text-xs text-gray-500 font-bold mb-1">🎬 Logo de Carga / Preloader (URL)</label>
+                                <input type="url" id="cfg-splash-logo-url" class="w-full border border-gray-300 px-3 py-2 rounded-lg text-sm" placeholder="URL del logo que se muestra mientras carga la página">
+                                <small class="text-[10px] text-gray-500 mt-1 block">Este logo aparece en la pantalla de carga inicial (preloader). Usa la misma imagen que tu logo principal o una versión optimizada.</small>
+                            </div>
                             <div>
                                 <label class="block text-xs text-gray-500 font-bold mb-1">Color Principal (Botones y Acentos)</label>
                                 <div class="flex items-center gap-2">
@@ -884,11 +894,44 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
                                 <label class="block text-xs font-bold text-gray-500 mb-1">Repositorio (Usuario/Repo)</label>
-                                <input type="text" id="cfg-gh-repo" class="w-full border border-gray-300 px-3 py-2 rounded-lg text-sm" placeholder="ej: famlyfragrancerd-byte/famlyfragrancerd-web">
+                                <input type="text" id="cfg-gh-repo" class="w-full border border-gray-300 px-3 py-2 rounded-lg text-sm" placeholder="ej: Thefragancehouse-byte/Thefragancehouse-web">
                             </div>
                             <div>
                                 <label class="block text-xs font-bold text-gray-500 mb-1">Token de GitHub (PAT)</label>
                                 <input type="password" id="cfg-gh-token" class="w-full border border-gray-300 px-3 py-2 rounded-lg text-sm" placeholder="ghp_xxxxxxxxxxxxxxxxxxxxxxxx">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-50 p-6 rounded-xl border border-green-200">
+                        <h3 class="font-bold text-green-900 mb-4 border-b border-green-200 pb-2">📖 Sección Quiénes Somos (About Us)</h3>
+                        <p class="text-xs text-green-800 mb-4">Edita el contenido principal de tu página Quiénes Somos, incluyendo la información del CEO.</p>
+                        
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
+                            <div class="lg:col-span-2">
+                                <label class="block text-xs font-bold text-green-900 mb-2">📝 Texto Principal (Historia y Misión)</label>
+                                <textarea id="cfg-about-main-text" rows="4" class="w-full border border-green-300 px-3 py-2 rounded-lg text-sm bg-white focus:outline-none focus:border-green-500" placeholder="Escribe la historia de tu empresa, misión y valores..."></textarea>
+                                <small class="text-[10px] text-gray-500 mt-1 block">Puedes usar etiquetas HTML como &lt;strong&gt;, &lt;em&gt;, &lt;br&gt; para dar formato.</small>
+                            </div>
+                        </div>
+
+                        <div class="bg-white border border-green-200 p-4 rounded-lg">
+                            <h4 class="font-bold text-green-900 mb-4 text-sm">👤 Información del CEO / Fundador</h4>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-green-900 mb-1">📷 URL de la Foto del CEO</label>
+                                    <input type="url" id="cfg-about-ceo-img" class="w-full border border-green-300 px-3 py-2 rounded-lg text-sm bg-white focus:outline-none focus:border-green-500" placeholder="https://ejemplo.com/ceo.jpg">
+                                    <small class="text-[10px] text-gray-500 mt-1 block">Usa una imagen cuadrada para mejor visualización circular.</small>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-green-900 mb-1">👤 Nombre del CEO</label>
+                                    <input type="text" id="cfg-about-ceo-name" class="w-full border border-green-300 px-3 py-2 rounded-lg text-sm bg-white focus:outline-none focus:border-green-500" placeholder="Ej: María Rodríguez">
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <label class="block text-xs font-bold text-green-900 mb-1">💼 Rol / Cargo del CEO</label>
+                                <input type="text" id="cfg-about-ceo-role" class="w-full border border-green-300 px-3 py-2 rounded-lg text-sm bg-white focus:outline-none focus:border-green-500" placeholder="Ej: CEO & Fundadora o CEO & Visión">
+                                <small class="text-[10px] text-gray-500 mt-1 block">Puede ser un rol, cargo o una frase inspiradora corta.</small>
                             </div>
                         </div>
                     </div>
@@ -1085,7 +1128,7 @@
                 const manifest = {
                     "name": "Scent Paradise", "short_name": "Scent", "start_url": "/", "display": "standalone",
                     "background_color": "#ffffff", "theme_color": "#000000",
-                    "icons": [ { "src": "https://raw.githubusercontent.com/famlyfragrancerd-byte/famlyfragrancerd-web/54362eb6b882b258af2a8d6f066984c090a95436/logo%20png%20famly.png", "sizes": "192x192", "type": "image/png" } ]
+                    "icons": [ { "src": "https://raw.githubusercontent.com/yahairamendez/scentparadise-imagenes/bd3ff18396871b60f9169e997e14f00d00353cef/logothefragancehouse.png", "sizes": "192x192", "type": "image/png" } ]
                 };
                 const manifestBlob = new Blob([JSON.stringify(manifest)], {type: 'application/json'});
                 const link = document.createElement('link'); link.rel = 'manifest'; link.href = URL.createObjectURL(manifestBlob);
@@ -1163,6 +1206,7 @@
         const CONFIG_FIELDS = [
             { key: 'wholesaleEmails', id: 'cfg-wholesale-emails', type: 'textarea' }, 
             { key: 'logoUrl', id: 'cfg-logo-url', type: 'url' },
+            { key: 'splashLogoUrl', id: 'cfg-splash-logo-url', type: 'url' },
             { key: 'colorPrimary', id: 'cfg-color-primary', type: 'color' },
             { key: 'colorSecondary', id: 'cfg-color-secondary', type: 'color' },
             { key: 'colorBg', id: 'cfg-color-bg', type: 'color' },
@@ -1197,7 +1241,11 @@
             { key: 'ghToken', id: 'cfg-gh-token', type: 'password' },
             { key: 'promoImg', id: 'cfg-promo-img', type: 'url' },
             { key: 'promoLink', id: 'cfg-promo-link', type: 'url' },
-            { key: 'promoActive', id: 'cfg-promo-active', type: 'select' }
+            { key: 'promoActive', id: 'cfg-promo-active', type: 'select' },
+            { key: 'aboutMainText', id: 'cfg-about-main-text', type: 'textarea' },
+            { key: 'aboutCeoImg', id: 'cfg-about-ceo-img', type: 'url' },
+            { key: 'aboutCeoName', id: 'cfg-about-ceo-name', type: 'text' },
+            { key: 'aboutCeoRole', id: 'cfg-about-ceo-role', type: 'text' }
         ];
 
         // FUNCIÓN SEGURA PARA ESCAPAR TEXTOS EN HTML ATTRIBUTES
@@ -1263,7 +1311,7 @@
                             if (Notification.permission === 'granted' && window.swRegistration) {
                                 window.swRegistration.showNotification('¡Nuevo Pedido Recibido! 🛍️', {
                                     body: `${order.customerName} ha pedido por RD$ ${order.total.toLocaleString('en-US')}.`,
-                                    icon: 'https://raw.githubusercontent.com/famlyfragrancerd-byte/famlyfragrancerd-web/54362eb6b882b258af2a8d6f066984c090a95436/logo%20png%20famly.png',
+                                    icon: 'https://raw.githubusercontent.com/yahairamendez/scentparadise-imagenes/bd3ff18396871b60f9169e997e14f00d00353cef/logothefragancehouse.png',
                                     vibrate: [200, 100, 200, 100, 200, 100, 200],
                                     tag: 'new-order',
                                     requireInteraction: true 
@@ -1436,10 +1484,17 @@
                     priceSize: data.priceSize || 'text-base md:text-lg'
                 };
 
-                const defaultLogo = "https://raw.githubusercontent.com/famlyfragrancerd-byte/famlyfragrancerd-web/54362eb6b882b258af2a8d6f066984c090a95436/logo%20png%20famly.png";
+                const defaultLogo = "https://raw.githubusercontent.com/yahairamendez/scentparadise-imagenes/bd3ff18396871b60f9169e997e14f00d00353cef/logothefragancehouse.png";
                 const logoUrl = data.logoUrl || defaultLogo;
                 document.getElementById('main-logo').src = logoUrl; document.getElementById('splash-logo').src = logoUrl;
                 document.querySelector('.footer-logo').src = logoUrl; document.getElementById('favicon-link').href = logoUrl;
+
+                // Apply splash/loading logo URL if specified separately
+                const splashLogoUrl = data.splashLogoUrl || logoUrl;
+                const splashLogoEl = document.getElementById('splash-logo');
+                if (splashLogoEl) {
+                    splashLogoEl.src = splashLogoUrl;
+                }
 
                 const root = document.documentElement;
                 root.style.setProperty('--primary', data.colorPrimary || '#000000');
@@ -1521,6 +1576,28 @@
                 }
                 
                 window.triggerPromoModal();
+
+                // Update About Us section (Quiénes Somos)
+                const aboutMainTextEl = document.getElementById('about-main-text');
+                if (aboutMainTextEl && data.aboutMainText) {
+                    aboutMainTextEl.innerHTML = data.aboutMainText;
+                }
+                
+                const aboutCeoImgEl = document.getElementById('about-ceo-img');
+                if (aboutCeoImgEl && data.aboutCeoImg) {
+                    aboutCeoImgEl.src = data.aboutCeoImg;
+                    aboutCeoImgEl.alt = data.aboutCeoName || 'CEO';
+                }
+                
+                const aboutCeoNameEl = document.getElementById('about-ceo-name');
+                if (aboutCeoNameEl && data.aboutCeoName) {
+                    aboutCeoNameEl.textContent = data.aboutCeoName;
+                }
+                
+                const aboutCeoRoleEl = document.getElementById('about-ceo-role');
+                if (aboutCeoRoleEl && data.aboutCeoRole) {
+                    aboutCeoRoleEl.textContent = data.aboutCeoRole;
+                }
 
                 CONFIG_FIELDS.forEach(field => {
                     const el = document.getElementById(field.id);
@@ -1869,7 +1946,7 @@
 
             const baseUrl = window.location.href.split('?')[0].split('#')[0];
             const shareUrl = baseUrl + '?p=' + prod.id;
-            const shareTitle = `¡Mira este perfume en FamlyFragrancerd!`;
+            const shareTitle = `¡Mira este perfume en Thefragancehouse!`;
             
             let activePrice = prod.price;
             if (window.isWholesaler && prod.wholesalePrice && prod.wholesalePrice < prod.price) { activePrice = prod.wholesalePrice; }
@@ -2025,7 +2102,7 @@
         window.uploadToGitHub = async function(e) {
             const file = e.target.files[0]; if(!file) return;
             const configRef = doc(db, 'artifacts', appId, 'public', 'config'); const snap = await getDoc(configRef); const data = snap.exists() ? snap.data() : {};
-            const repo = data.ghRepo || 'famlyfragrancerd-byte/famlyfragrancerd-web'; const token = data.ghToken;
+            const repo = data.ghRepo || 'Thefragancehouse-byte/Thefragancehouse-web'; const token = data.ghToken;
             if(!token) { window.showToast("⚠️ Falta el Token de GitHub. Búscalo en 'Configurar Tienda'."); e.target.value = ''; return; }
 
             const btnText = document.getElementById('upload-img-text'); btnText.innerText = "Subiendo... ⏳";
@@ -2660,7 +2737,7 @@
             // ACTIVAR COMPRESIÓN DEL DOCUMENTO PDF
             const doc = new jsPDF({ compress: true });
 
-            const storeName = "FamlyFragrancerd";
+            const storeName = "Thefragancehouse";
             
             let rawPhone = window.siteConfig?.fPhone || "";
             let storePhone = rawPhone.replace(/[^\x20-\x7E\xC0-\xFF]/g, '').trim();
@@ -2670,12 +2747,12 @@
             let storeEmail = rawEmail;
             
             if (rawEmail.includes('ꜰᴀᴍʟʏ') || rawEmail.includes('ʜᴏᴛᴍᴀɪʟ') || rawEmail.includes('ᴄᴏᴍ')) {
-                storeEmail = "famlyfragrancerd@hotmail.com";
+                storeEmail = "Thefragancehouse@hotmail.com";
             } else {
                 storeEmail = rawEmail.replace(/[^\x20-\x7E\xC0-\xFF]/g, '').trim();
             }
 
-            if (storeEmail.length < 5 || storeEmail === '@') storeEmail = "famlyfragrancerd@hotmail.com";
+            if (storeEmail.length < 5 || storeEmail === '@') storeEmail = "Thefragancehouse@hotmail.com";
 
             const primaryColorHex = window.siteConfig?.colorPrimary || '#000000';
             
@@ -2687,7 +2764,7 @@
                 if (window.cachedPdfLogo) {
                     doc.addImage(window.cachedPdfLogo, 'PNG', 14, 12, 28, 28, 'logoTienda', 'FAST');
                 } else {
-                    const logoUrl = window.siteConfig?.logoUrl || "https://raw.githubusercontent.com/famlyfragrancerd-byte/famlyfragrancerd-web/54362eb6b882b258af2a8d6f066984c090a95436/logo%20png%20famly.png";
+                    const logoUrl = window.siteConfig?.logoUrl || "https://raw.githubusercontent.com/yahairamendez/scentparadise-imagenes/bd3ff18396871b60f9169e997e14f00d00353cef/logothefragancehouse.png";
                     const img = new Image(); img.crossOrigin = "Anonymous"; img.src = logoUrl;
                     await new Promise((resolve) => { img.onload = resolve; img.onerror = resolve; });
                     const MAX_SIZE = 300; let w = img.width; let h = img.height;
@@ -2832,7 +2909,7 @@
             doc.setFontSize(10);
             doc.setFont("helvetica", "italic");
             doc.setTextColor(255, 255, 255);
-            doc.text("¡Gracias por su compra en FamlyFragrancerd!", 105, pageHeight - 6, { align: "center" });
+            doc.text("¡Gracias por su compra en Thefragancehouse!", 105, pageHeight - 6, { align: "center" });
 
             const fileName = `Recibo_Famly_${order.orderId.replace('#', '')}.pdf`;
             
@@ -2905,7 +2982,7 @@
 
             doc.setFont('helvetica', 'bold');
             doc.setFontSize(18);
-            doc.text('FamlyFragrancerd', pageWidth / 2, 18, { align: 'center' });
+            doc.text('Thefragancehouse', pageWidth / 2, 18, { align: 'center' });
             doc.setFontSize(12);
             doc.setFont('helvetica', 'normal');
             doc.setTextColor(120, 120, 120);
@@ -3003,7 +3080,7 @@
             const displayStatus = window.statusDisplayNames[order.status] || order.status;
             const customMsg = window.statusMessages[order.status] || '';
             
-            let text = `*FamlyFragrancerd* \nHola ${order.customerName.split(' ')[0]}, el estado de tu pedido *${order.orderId}* es: *${displayStatus.toUpperCase()}*\n\n`;
+            let text = `*Thefragancehouse* \nHola ${order.customerName.split(' ')[0]}, el estado de tu pedido *${order.orderId}* es: *${displayStatus.toUpperCase()}*\n\n`;
             text += `${customMsg}\n`;
             text += `\n*Total:* RD$ ${order.total.toLocaleString('en-US')}\n*Ver seguimiento:* ${window.location.origin}${window.location.pathname}#pedidos\n\n¿Dudas? ¡Solo responde este mensaje!`;
             
@@ -3014,7 +3091,7 @@
             const order = window.adminOrders.find(o => o.id === orderId);
             if(!order || !order.customerPhone) return window.showToast("Número de cliente no disponible para WhatsApp.");
             let phone = order.customerPhone.replace(/\D/g,''); if(phone.length === 10) phone = '1' + phone;
-            let text = `*FamlyFragrancerd*\nHola ${order.customerName.split(' ')[0]}, te enviamos adjunto a este mensaje el *Recibo PDF Oficial* de tu pedido *${order.orderId}*.\n\n¡Gracias por preferirnos!`;
+            let text = `*Thefragancehouse*\nHola ${order.customerName.split(' ')[0]}, te enviamos adjunto a este mensaje el *Recibo PDF Oficial* de tu pedido *${order.orderId}*.\n\n¡Gracias por preferirnos!`;
             
             // Creamos el archivo PDF en la memoria del celular sin descargarlo
             const pdfFile = await window.generateInvoicePDF(orderId, true);
@@ -3521,7 +3598,7 @@
             if (adminPhone.length === 10) adminPhone = '1' + adminPhone; 
             if (adminPhone.length < 10) adminPhone = "18495161973"; 
             
-            const text = `Hola FamlyFragrancerd 👋,\nQuisiera hacerles una consulta o modificación respecto a mi pedido *${orderId}*.`;
+            const text = `Hola Thefragancehouse 👋,\nQuisiera hacerles una consulta o modificación respecto a mi pedido *${orderId}*.`;
             // Usamos window.open y la API universal de WhatsApp para asegurar que abra en todas las plataformas
             window.open(`https://api.whatsapp.com/send?phone=${adminPhone}&text=${encodeURIComponent(text)}`, '_blank');
         }
@@ -3642,6 +3719,71 @@
                 window.open(`https://wa.me/${adminPhone}?text=${encodeURIComponent(text)}`, '_blank');
                 setTimeout(() => { btn.innerHTML = `Realizar Pedido por WhatsApp`; btn.disabled = false; }, 3000);
             } catch (error) { console.error(error); window.showToast("Error al procesar el pedido."); btn.innerHTML = `Realizar Pedido por WhatsApp`; btn.disabled = false; }
+        }
+    </script>
+
+    <!-- ABOUT US MANAGEMENT SCRIPT -->
+    <script>
+        // ===== ABOUT US DATA MANAGEMENT =====
+        const ABOUT_US_STORAGE_KEY = 'aboutUsData';
+        
+        // Default About Us data
+        const defaultAboutUsData = {
+            mainText: 'En <strong class="text-perfume-dark">Scent Paradise</strong> somos apasionados del arte de la perfumería. Nuestro objetivo es acercarte las mejores fragancias del mundo con autenticidad, calidad y precios accesibles. Creemos que cada persona merece llevar su propia fragancia — una que cuente su historia, refleje su personalidad y deje una huella inolvidable. Trabajamos con proveedores certificados, garantizamos la originalidad de cada producto y ofrecemos una experiencia de compra cómoda, rápida y confiable.',
+            ceoPhotoUrl: 'https://raw.githubusercontent.com/yahairamendez/scentparadise-imagenes/bd3ff18396871b60f9169e997e14f00d00353cef/logothefragancehouse.png',
+            ceoName: 'CEO Name',
+            ceoRole: 'CEO & Founder'
+        };
+        
+        // Load About Us data from localStorage or use defaults
+        function loadAboutUsData() {
+            const stored = localStorage.getItem(ABOUT_US_STORAGE_KEY);
+            return stored ? JSON.parse(stored) : defaultAboutUsData;
+        }
+        
+        // Save About Us data to localStorage
+        function saveAboutUsData(data) {
+            localStorage.setItem(ABOUT_US_STORAGE_KEY, JSON.stringify(data));
+        }
+        
+        // Update About Us section on page load
+        function initializeAboutUs() {
+            const data = loadAboutUsData();
+            
+            // Update main text
+            const mainTextEl = document.getElementById('about-main-text');
+            if (mainTextEl) {
+                mainTextEl.innerHTML = data.mainText;
+            }
+            
+            // Update CEO photo
+            const ceoImgEl = document.getElementById('about-ceo-img');
+            if (ceoImgEl) {
+                ceoImgEl.src = data.ceoPhotoUrl;
+                ceoImgEl.alt = data.ceoName;
+            }
+            
+            // Update CEO name
+            const ceoNameEl = document.getElementById('about-ceo-name');
+            if (ceoNameEl) {
+                ceoNameEl.textContent = data.ceoName;
+            }
+            
+            // Update CEO role
+            const ceoRoleEl = document.getElementById('about-ceo-role');
+            if (ceoRoleEl) {
+                ceoRoleEl.textContent = data.ceoRole;
+            }
+        }
+        
+        // Run on page load
+        document.addEventListener('DOMContentLoaded', initializeAboutUs);
+        
+        // Also run immediately if DOM is already loaded
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeAboutUs);
+        } else {
+            initializeAboutUs();
         }
     </script>
 
